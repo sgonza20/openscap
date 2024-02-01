@@ -505,7 +505,7 @@ Referenced check files:
                 system: http://oval.mitre.org/XMLSchema/oval-definitions-5
         ssg-rhel7-ocil.xml
                 system: http://scap.nist.gov/schema/ocil/2
-        https://www.redhat.com/security/data/oval/com.redhat.rhsa-RHEL7.xml.bz2
+        https://www.redhat.com/security/data/oval/v2/RHEL7/rhel-7.oval.xml.bz2
                 system: http://oval.mitre.org/XMLSchema/oval-definitions-5
 ----
 
@@ -1670,7 +1670,7 @@ $ oscap xccdf eval \
 /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
 
 WARNING: This content points out to the remote resources. Use `--fetch-remote-resources' option to download them.
-WARNING: Skipping https://www.redhat.com/security/data/oval/com.redhat.rhsa-RHEL7.xml.bz2 file which is referenced from XCCDF content
+WARNING: Skipping https://www.redhat.com/security/data/oval/v2/RHEL7/rhel-7.oval.xml.bz2 file which is referenced from XCCDF content
 ----
 
 By default the `oscap` tool will not blindly download and execute remote content.
@@ -1683,7 +1683,7 @@ $ oscap xccdf eval \
 --fetch-remote-resources \
 --profile xccdf_org.ssgproject.content_profile_common \
 /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
-Downloading: https://www.redhat.com/security/data/oval/com.redhat.rhsa-RHEL7.xml.bz2 ... ok
+Downloading: https://www.redhat.com/security/data/oval/v2/RHEL7/rhel-7.oval.xml.bz2 ... ok
 Title   Ensure /var/log Located On Separate Partition
 Rule    xccdf_org.ssgproject.content_rule_partition_for_var_log
 ...
